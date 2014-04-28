@@ -43,8 +43,8 @@ public class WaveHandler : MonoBehaviour {
 			rigidbody.useGravity = false;
 			enemy.AddComponent("DontGoThroughThings");
 			enemy.AddComponent("DeleteChildren");
-
-			//enemy.AddComponent("EnemyMovement");
+			enemy.AddComponent("EnemyMovement");
+			enemy.AddComponent ("EnemyProjectileLauncher");
 		}
 
 		//clone = Instantiate(heart, position, Quaternion.identity);
